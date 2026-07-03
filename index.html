@@ -192,6 +192,26 @@
             border: 1px solid var(--border);
         }
 
+        /* Form Container Styling */
+        .form-section {
+            max-width: 750px;
+            margin: 0 auto 100px auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+        }
+
+        .form-iframe {
+            width: 100%;
+            height: 700px; /* Adjust this height based on how long your form questions are */
+            border: none;
+            border-radius: 12px;
+            background: #ffffff; /* Gives a clean clean canvas for the form layout */
+        }
+
         /* Testimonials specific styling */
         .testimonial-card {
             display: flex;
@@ -311,6 +331,15 @@
                     <p><strong><em>Zero-Downtime Guarantee</em></strong></p>
                     <p>We work around your schedule—including evenings and weekends—so you never lose a productive hour of your workday.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: Embedded Google Form Container -->
+        <section>
+            <h2>Book Your Free Smart Scan</h2>
+            <div class="form-section">
+                <!-- ⚠️ CRITICAL STEP: Swap the URL inside the src="" property right below with your form link -->
+                <iframe class="form-iframe" src="<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZnv-_xbHRRTfcETDMa9HWMgRDIAEdfKTkrvHocBCTbU0GAg/viewform?embedded=true" width="640" height="961" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>" frameborder="0" marginheight="0" marginwidth="0">Loading booking portal…</iframe>
             </div>
         </section>
 
