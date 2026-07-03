@@ -38,23 +38,40 @@
             margin-bottom: 60px;
         }
 
-        /* Stylized ByteBack Minimal Tech Brand Mark */
+        /* Stylized ByteBack Brand Layout */
+        .brand-container {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
         .brand-logo {
-            display: inline-block;
             background: linear-gradient(135deg, var(--primary), var(--accent));
             color: #0b132b;
             font-weight: 900;
-            font-size: 1.8rem;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
+            font-size: 1.6rem;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
             border-radius: 12px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(6, 214, 160, 0.4);
+            box-shadow: 0 0 20px rgba(6, 214, 160, 0.3);
+            text-align: center;
+        }
+
+        .brand-name {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+            background: linear-gradient(135deg, #ffffff, var(--text-muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         h1 {
             font-size: 2.8rem;
+            margin-top: 0;
             margin-bottom: 15px;
             background: linear-gradient(135deg, #ffffff 60%, var(--text-muted));
             -webkit-background-clip: text;
@@ -71,7 +88,7 @@
             border: 1px solid var(--border);
         }
 
-        /* Custom syntax rendering styles with the new tech color palette */
+        /* Custom syntax rendering styles with the tech color palette */
         mark {
             background-color: var(--highlight);
             color: var(--highlight-text);
@@ -133,6 +150,8 @@
             padding: 35px;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -143,6 +162,7 @@
 
         .card p {
             color: var(--text-muted);
+            margin-bottom: 0;
         }
 
         .card p strong, .card p strong em {
@@ -158,6 +178,17 @@
             object-fit: cover;
             border-radius: 12px;
             margin-bottom: 25px;
+            border: 1px solid var(--border);
+        }
+
+        /* Security Card Specific Fitting Adjustments */
+        .security-img {
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
             border: 1px solid var(--border);
         }
 
@@ -236,7 +267,10 @@
         
         <!-- SECTION 1: Header & How it Works -->
         <header>
-            <div class="brand-logo">B</div>
+            <div class="brand-container">
+                <div class="brand-logo">B</div>
+                <div class="brand-name">ByteBack</div>
+            </div>
             <h1>Three Steps to a Faster Device</h1>
             <p class="intro-text"><mark>We’ve eliminated the hassle of traditional tech repair. You don’t even have to leave your desk.</mark></p>
         </header>
@@ -269,7 +303,7 @@
                     <p>Don't drop <mark>$2,000</mark> on a new laptop. <strong>90%</strong> of sluggish computers are just bogged down by poor optimization. We restore your speed for a fraction of the cost.</p>
                 </div>
                 <div class="card">
-                    <img src="image2.png" alt="Secure encrypted data remote session" class="card-img" style="height: 160px; object-position: right top;">
+                    <img src="image2.png" alt="Secure encrypted data remote session" class="security-img">
                     <p><strong><em>Bank-Grade Remote Security</em></strong></p>
                     <p>Your data privacy is our obsession. Every session is <mark>fully encrypted</mark>, completely transparent, and visible on your screen from start to finish.</p>
                 </div>
